@@ -108,7 +108,7 @@ def information(brand,cinema_hall,date,cinema):
 
 
 brands=[elem[0] for elem in cursor.execute("select name from brand").fetchall()]
-token = ""
+token = "be721235fa277f5115e38571dc4137fdd58b65364904a86dd46c2e328b7afbc64a7f5062117695d146103"
 vk = vk_api.VkApi(token=token)
 longpoll = VkLongPoll(vk)
 for event in longpoll.listen():
